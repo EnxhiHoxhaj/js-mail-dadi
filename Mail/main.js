@@ -1,6 +1,13 @@
 //Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
 
-//selezione gli elementi dal mio DOM
+let yourEmail = prompt ("Insert your e-mail?");
+
+console.log (yourEmail);
+
+document.querySelector(".mail").innerHTML= yourEmail;
+
+
+//selezione il bottone dal DOM
 
 //creo la mia lista di e-mail che hanno accesso alla mia pagina
 

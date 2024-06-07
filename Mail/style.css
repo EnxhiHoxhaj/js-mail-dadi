@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.mail {
+    display: inline-block;
+    margin: 0 15px;
+    width: 250px;
+    height: 25px;
+    border: solid darkred 1px;
+    border-radius: 15px;
+}
