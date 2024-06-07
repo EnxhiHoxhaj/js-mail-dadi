@@ -9,6 +9,10 @@ document.querySelector(".mail").innerHTML= yourEmail;
 
 //selezione il bottone dal DOM
 
+const myButton = document.querySelector("button");
+const printRis = document.querySelector(".risultato")
+
+
 //creo la mia lista di e-mail che hanno accesso alla mia pagina
 
 //creo in ciclo di controllo della e-mail inserita dall'utente
