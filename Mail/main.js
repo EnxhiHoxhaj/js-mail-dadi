@@ -15,7 +15,9 @@ const printRis = document.querySelector(".risultato")
 
 //creo la mia lista di e-mail che hanno accesso alla mia pagina
 
-const iscritti = ["lorem@gmail.com", "lorem@haomail.it", "dolorem.est@gmail.it", "ciccio.pasticcio@live.it", "fragola86@outlook.it", "banana33@libero.it"];
+const iscritti = ["lorem@gmail.com", "lorem@haomail.it", "dolorem.est@gmail.it", "ciccio.pasticcio@live.it", "fragola86@outlook.it", "banana33@libero.it", "mario.rossi@rrr.it", "estate24@forse.com"];
+
+console.log(iscritti.length);
 
 //creo in ciclo di controllo della e-mail inserita dall'utente
 
