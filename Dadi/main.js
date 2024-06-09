@@ -1,7 +1,8 @@
 //Gioco dei: Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 // genera numero random per il giocatore
-
+const mioNumero = Math.floor(Math.random()*10);
+campoGiocatore = mioNumero;
 // genera numore random per il computer
 
 // stabilire chi ha il numero maggiore
