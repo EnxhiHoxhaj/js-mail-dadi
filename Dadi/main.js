@@ -1,5 +1,7 @@
 //Gioco dei: Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
+//richiamare tutti gli elementi del DOM
+const risultato = document.getElementById("vincitore")
 // genera numero random per il giocatore
 const mioNumero = Math.floor(Math.random()*10);
 campoGiocatore = mioNumero;
