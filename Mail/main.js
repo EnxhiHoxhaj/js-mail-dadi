@@ -3,15 +3,24 @@
 // creo il prompt per la richiesta della e-mail del
 
 let yourEmail = prompt ("Insert your e-mail?");
-console.log (yourEmail);
-document.querySelector(".mail").innerHTML= yourEmail;
+console.log(yourEmail);
+document.querySelector(".mail").innerHTML = yourEmail;
+//selezione il bottone dal DOM
 
+const myButton = document.querySelector("button");
+let printRisultato;
 //creo la mia lista di e-mail che hanno accesso alla mia pagina*/
 
 const iscritti = ["lorem@gmail.com", "lorem@hotmail.it", "dolorem.est@gmail.it", "ciccio.pasticcio@live.it", "fragola86@outlook.it", "banana33@libero.it", "mario.rossi@rrr.it", "estate24@forse.com"];
+
 //creo un ciclo per vedere la mia lista
-for (let i = 0; i < iscritti.length; i++) {
+for (let i = 0; i < iscritti.length; i++) { 
+    console.log(iscritti [i]);
+    if (iscritti.length === yourEmail) { // se la e-mail del visitatore è nell'archivio iscritti si concede l'accesso
+        printRisultato = "benvenuta";
+    } else  { //altrimenti si nega l'accesso
+        printRisultato = "Accesso negato";
+    }
+    console.log(printRisultato);
+}; 
 
-    console.log(iscritti[i]);
-
-}
