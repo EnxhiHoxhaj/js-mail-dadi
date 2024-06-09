@@ -3,13 +3,15 @@
 //richiamare tutti gli elementi del DOM
 const risultato = document.getElementById("vincitore")
 // genera numero random per il giocatore
-const mioNumero = Math.floor(Math.random()*10);
+const mioNumero = Math.floor(Math.random()*7);
 campoGiocatore = mioNumero;
 // genera numore random per il computer
-const pcNumero = Math.floor(Math.random()*10);
+const pcNumero = Math.floor(Math.random()*7);
 console.log(mioNumero, pcNumero);
 // stabilire chi ha il numero maggiore
-
+if (mioNumero > pcNumero) {
+    
+}
 // se il giocatore ha il numero maggiore ha vinto
 
 //se pc ha numero maggiore il gicatore ha perso
