@@ -1,5 +1,10 @@
 //Gioco dei: Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
+let primo = document.getElementById("giocarore");
+let secondo = document.getElementById("pc");
+let terzo = document.getElementById("vincitore");
+console.log(primo, secondo);
+
 //richiamare tutti gli elementi del DOM
 let risultato;
 // genera numero random per il giocatore
@@ -20,7 +25,7 @@ console.log(risultato);
 
 // stampo il gioco in pagina
 
-document.getElementById("giocarore").innerHTML = mioNumero;
-document.getElementById("pc").innerHTML = pcNumero;
-document.getElementById("vincitore").innerHTML = risultato;
-
+//document.getElementById("giocarore").innerHTML = "il tuo numero è: " + mioNumero;
+primo.innerHTML += "il tuo numero è: " + mioNumero;
+secondo.innerHTML += "il numero del computer è: " + pcNumero;
+terzo.innerHTML += risultato;
