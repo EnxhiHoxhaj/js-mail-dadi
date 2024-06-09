@@ -1,7 +1,7 @@
 //Gioco dei: Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 //richiamare tutti gli elementi del DOM
-const risultato = document.getElementById("vincitore")
+let risultato;
 // genera numero random per il giocatore
 const mioNumero = Math.floor(Math.random()*7);
 campoGiocatore = mioNumero;
@@ -9,9 +9,13 @@ campoGiocatore = mioNumero;
 const pcNumero = Math.floor(Math.random()*7);
 console.log(mioNumero, pcNumero);
 // stabilire chi ha il numero maggiore
-if (mioNumero > pcNumero) {
-    
+if (mioNumero > pcNumero) { // se il giocatore ha il numero maggiore ha vinto
+    risultato = ("Hai vinto");
+} else if ( mioNumero === pcNumero) {
+    risultato = ("Pareggio!");
+} else {
+    risultato= ("Hai perso!")
 }
-// se il giocatore ha il numero maggiore ha vinto
+console.log(risultato);
 
 //se pc ha numero maggiore il gicatore ha perso
