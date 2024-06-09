@@ -11,11 +11,16 @@ console.log(mioNumero, pcNumero);
 // stabilire chi ha il numero maggiore
 if (mioNumero > pcNumero) { // se il giocatore ha il numero maggiore ha vinto
     risultato = ("Hai vinto");
-} else if ( mioNumero === pcNumero) {
-    risultato = ("Pareggio!");
-} else {
+} else if ( mioNumero === pcNumero) { //il numero il pari quindi pareggio
+    risultato = ("Pareggio!"); 
+} else { //se pc ha numero maggiore il gicatore ha perso
     risultato= ("Hai perso!")
 }
 console.log(risultato);
 
-//se pc ha numero maggiore il gicatore ha perso
+// stampo il gioco in pagina
+
+document.getElementById("giocarore").innerHTML = mioNumero;
+document.getElementById("pc").innerHTML = pcNumero;
+document.getElementById("vincitore").innerHTML = risultato;
+
